@@ -1,4 +1,3 @@
-#Selection Sort
 
 ## Insertion Sort
 
@@ -17,6 +16,7 @@
 > [!NOTE]  
 > Time Complexity: Dizi sıralandıktan sonra 18 sayısı "Average case" (Aradığımız sayının ortada olması) kapsamına girer.
 
+## Selection Sort
 
 [7,3,5,8,2,9,4,15,6] -> Selection Sort , ilk 4 adım.
 
