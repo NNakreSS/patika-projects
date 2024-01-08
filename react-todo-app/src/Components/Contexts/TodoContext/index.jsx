@@ -79,6 +79,14 @@ const TodoProvider = ({ children }) => {
     });
   };
 
+  const deleteComplatedTodos = () => {
+    setTodos((prev) => {
+      const prevTodos = prev.filter((todo) => !todo.completed && todo);
+      localStorage.setItem("todos", JSON.stringify(prevTodos));
+      return prevTodos;
+    });
+  };
+
   const values = {
     todos,
     setTodos,
@@ -90,8 +98,9 @@ const TodoProvider = ({ children }) => {
     deleteTodo,
     prevTodos,
     updateTodo,
+    deleteComplatedTodos,
   };
-  
+
   return <TodoContext.Provider value={values}>{children}</TodoContext.Provider>;
 };
 

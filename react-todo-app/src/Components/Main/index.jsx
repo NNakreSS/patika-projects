@@ -19,7 +19,7 @@ const Main = () => {
 
   return (
     <section className="main">
-      <input className="toggle-all" type="checkbox" />
+      <div className="toggle-all" type="checkbox"></div>
       <label htmlFor="toggle-all" onClick={() => toggleAllTodo()}></label>
       <ul className="todo-list">
         {prevTodos.map((todo, index) => (

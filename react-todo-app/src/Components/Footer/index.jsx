@@ -1,7 +1,7 @@
 import { useTodo } from "../Contexts/TodoContext";
 
 const Footer = () => {
-  const { prevTodos, filter, setFilter } = useTodo();
+  const { prevTodos, filter, setFilter, deleteComplatedTodos } = useTodo();
   return (
     <footer className="footer">
       <span className="todo-count">
@@ -38,7 +38,9 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <button className="clear-completed">Clear completed</button>
+      <button className="clear-completed" onClick={deleteComplatedTodos}>
+        Clear completed
+      </button>
     </footer>
   );
 };
