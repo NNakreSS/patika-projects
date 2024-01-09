@@ -4,7 +4,7 @@ import axios from "axios";
 
 const WeatherContext = createContext();
 
-const apiKey = "d4e288feede9ee3a6b6b7f835c8e4b39";
+const apiKey = "";
 const WeatherProvider = ({ children }) => {
   const [weathers, setWeather] = useState();
   const [city, setCity] = useState("Adana");
